@@ -1,0 +1,56 @@
+{
+  "name": "product-skills",
+  "version": "0.3.0",
+  "description": "Agent skills for product thinking and PM craft. Strategy, conversion, pricing, retention, analytics, competitive intelligence, roadmapping, and product management constraints for AI coding agents.",
+  "keywords": [
+    "agent-skills",
+    "ai",
+    "product",
+    "ux",
+    "conversion",
+    "positioning",
+    "copy",
+    "pricing",
+    "retention",
+    "analytics",
+    "roadmap",
+    "competitive-intelligence",
+    "pm-skills",
+    "product-management",
+    "frameworks",
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "opencode",
+    "cline",
+    "codex",
+    "aider",
+    "skills"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "bin": {
+    "product-skills": "./bin/cli.mjs"
+  },
+  "type": "module",
+  "files": [
+    "bin/",
+    "skills/",
+    "src/",
+    "LICENSE",
+    "DISCLAIMER.md",
+    "TERMS.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
