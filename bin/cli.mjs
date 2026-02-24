@@ -56,21 +56,21 @@ ${c.bold}product-skills${c.reset} ${c.dim}v${VERSION}${c.reset}
 Agent skills for product thinking.
 
 ${c.bold}Usage:${c.reset}
-  npx product-skills add <skill-name>   Add a specific skill
-  npx product-skills add --all          Add all skills
-  npx product-skills list               List available skills
-  npx product-skills info <skill-name>  Show skill details
-  npx product-skills help               Show this message
+  npx github:Dragoon0x/product-skills add <skill-name>   Add a specific skill
+  npx github:Dragoon0x/product-skills add --all          Add all skills
+  npx github:Dragoon0x/product-skills list               List available skills
+  npx github:Dragoon0x/product-skills info <skill-name>  Show skill details
+  npx github:Dragoon0x/product-skills help               Show this message
 
 ${c.bold}Options:${c.reset}
   --dir <path>    Target directory ${c.dim}(default: .product-skills)${c.reset}
 
 ${c.bold}Examples:${c.reset}
-  ${c.dim}$ npx product-skills add positioning${c.reset}
-  ${c.dim}$ npx product-skills add conversion-copy landing-structure${c.reset}
-  ${c.dim}$ npx product-skills add --all${c.reset}
-  ${c.dim}$ npx product-skills add --all --dir ./agent-skills${c.reset}
-  ${c.dim}$ npx product-skills list${c.reset}
+  ${c.dim}$ npx github:Dragoon0x/product-skills add positioning${c.reset}
+  ${c.dim}$ npx github:Dragoon0x/product-skills add conversion-copy landing-structure${c.reset}
+  ${c.dim}$ npx github:Dragoon0x/product-skills add --all${c.reset}
+  ${c.dim}$ npx github:Dragoon0x/product-skills add --all --dir ./agent-skills${c.reset}
+  ${c.dim}$ npx github:Dragoon0x/product-skills list${c.reset}
 
 ${c.dim}Experimental software. Not professional advice. DYOR. All output requires human review.${c.reset}
 ${c.dim}See DISCLAIMER.md and TERMS.md for full details.${c.reset}
@@ -101,7 +101,7 @@ function listSkills() {
   }
 
   console.log(
-    `${c.dim}Run ${c.reset}npx product-skills add <name>${c.dim} to install a skill.${c.reset}\n`
+    `${c.dim}Run ${c.reset}npx github:Dragoon0x/product-skills add <name>${c.dim} to install a skill.${c.reset}\n`
   );
 }
 
@@ -114,7 +114,7 @@ function showInfo(skillName) {
       `\n${c.red}Skill not found:${c.reset} ${skillName}\n`
     );
     console.log(
-      `${c.dim}Run ${c.reset}npx product-skills list${c.dim} to see available skills.${c.reset}\n`
+      `${c.dim}Run ${c.reset}npx github:Dragoon0x/product-skills list${c.dim} to see available skills.${c.reset}\n`
     );
     process.exit(1);
   }
@@ -140,7 +140,7 @@ function addSkills(skillNames, targetDir) {
           `\n${c.red}Skill not found:${c.reset} ${name}`
         );
         console.log(
-          `${c.dim}Run ${c.reset}npx product-skills list${c.dim} to see available skills.${c.reset}\n`
+          `${c.dim}Run ${c.reset}npx github:Dragoon0x/product-skills list${c.dim} to see available skills.${c.reset}\n`
         );
         process.exit(1);
       }
@@ -236,10 +236,10 @@ switch (command) {
         `${c.dim}Examples:${c.reset}`
       );
       console.log(
-        `  ${c.dim}$ npx product-skills add positioning${c.reset}`
+        `  ${c.dim}$ npx github:Dragoon0x/product-skills add positioning${c.reset}`
       );
       console.log(
-        `  ${c.dim}$ npx product-skills add --all${c.reset}\n`
+        `  ${c.dim}$ npx github:Dragoon0x/product-skills add --all${c.reset}\n`
       );
       process.exit(1);
     }
@@ -252,7 +252,7 @@ switch (command) {
   case "info":
     if (!rest[0]) {
       console.log(
-        `\n${c.yellow}Specify a skill name.${c.reset} Example: npx product-skills info positioning\n`
+        `\n${c.yellow}Specify a skill name.${c.reset} Example: npx github:Dragoon0x/product-skills info positioning\n`
       );
       process.exit(1);
     }
