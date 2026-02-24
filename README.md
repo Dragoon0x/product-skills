@@ -1,4 +1,4 @@
-# product-skills
+# Product-Skills
 
 Agent skills for product thinking and PM craft. Help AI coding agents reason about strategy, conversion, pricing, retention, analytics, competitive intelligence, roadmapping, and the people side of product management before they build.
 
@@ -16,22 +16,22 @@ This is not a design system. Not a component library. This is the thinking layer
 
 ```bash
 # Add all skills
-npx product-skills add --all
+npx github:Dragoon0x/product-skills add --all
 
 # Add a specific skill
-npx product-skills add positioning
+npx github:Dragoon0x/product-skills add positioning
 
 # Add multiple skills
-npx product-skills add conversion-copy landing-structure pricing-page
+npx github:Dragoon0x/product-skills add conversion-copy landing-structure pricing-page
 
 # List available skills
-npx product-skills list
+npx github:Dragoon0x/product-skills list
 
 # Show skill details
-npx product-skills info positioning
+npx github:Dragoon0x/product-skills info positioning
 
 # Custom directory
-npx product-skills add --all --dir ./agent-skills
+npx github:Dragoon0x/product-skills add --all --dir ./agent-skills
 ```
 
 Skills are installed to `.product-skills/` by default. Point your agent to this directory.
