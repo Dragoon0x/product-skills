@@ -1,0 +1,17 @@
+{
+  "name": "product-skills",
+  "version": "1.0.0",
+  "description": "Product thinking and PM craft. 516 skills and 48 commands across product strategy, discovery, execution, analytics, growth, experience, conversion, and communication.",
+  "author": "Dragoon0x \u2014 https://x.com/0xDragoon",
+  "license": "MIT",
+  "plugins": [
+    "ps-strategy",
+    "ps-discovery",
+    "ps-execution",
+    "ps-analytics",
+    "ps-growth",
+    "ps-experience",
+    "ps-conversion",
+    "ps-communication"
+  ]
+}
